@@ -28,7 +28,7 @@
 .project-card-div {
     display: flex;
     gap: 30px;
-    align-items: flex-start;
+    align-items: stretch;
 }
 
 .project-card-left {
@@ -53,7 +53,36 @@
     flex: 1;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-self: stretch;
     gap: 15px;
+}
+
+.project-card-service {
+  font-size: 24px;
+  font-weight: bold;
+  color: #353535;
+  margin-bottom: 12px;
+}
+
+.project-card-info-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-card-tech-icons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.project-card-tech-icon {
+    font-size: 12px;
+    background-color: #dddddd;
+    padding: 2px 12px;
+    border-radius: 20px;
+    transition: transform 0.2s;
 }
 
 .project-card-info {
@@ -67,11 +96,56 @@
     color: #34495e;
 }
 
+.project-card-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card-link-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #34495e;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.project-card-link {
+    width: 90%;
+    display: flex;
+    background-color: #d4eaff;
+    padding: 12px;
+    border-radius: 14px;
+    justify-content: center;
+    align-items: center;
+    margin: 12px auto;
+    margin-bottom: 12px;
+}
+
+.project-card-link-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.project-card-link-icon {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.2s;
+}
+
+.project-card-link-icon:hover {
+    transform: scale(1.1);
+}
+
 @media (max-width: 768px) {
     .project-card-div {
         flex-direction: column;
     }
     .project-card-left {
         min-width: 100%;
+    }
+    .project-card-right {
+        gap: 20px;
     }
 }
