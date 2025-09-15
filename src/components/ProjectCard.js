@@ -8,7 +8,7 @@ function ProjectCard({ title, schedule, teamNum, tech, role, summary, videoUrl }
                 <div className="project-card-left">
                     <div className="project-card-video">
                         {videoUrl && (
-                            <video autoPlay loop muted playesInline src={process.env.PUBLIC_URL+videoUrl} controls>
+                            <video autoPlay loop muted playesInline src={videoUrl} controls>
                                 Your browser does not support the video tag.
                             </video>
                         )}
