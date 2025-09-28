@@ -45,7 +45,7 @@ function Mainpage() {
     return (
         <div className="mainpage-container">
             <h1 className="main-title">김동욱's web-portfolio</h1>
-            <h2 className="sub-title">휴먼교육센터 (2025.03.31 ~ 2025.03.19)</h2>
+            <h2 className="sub-title">휴먼교육센터 (2025.03.31 ~ 2025.09.19)</h2>
             <div>
                 {projects.map(project => (
                     <ProjectCard
